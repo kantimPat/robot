@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-09-19T13:32:49.100714" rpa="false" schemaversion="5">
+<suite id="s1" name="Full Flow Test" source="C:\Users\NK 2316\robot-lab\tests\full_flow_test.robot">
+<test id="s1-t1" name="Open Browser To Register Page" line="9">
+<kw name="Open Browser To Register Page" owner="RegisterPage">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-19T13:32:49.902276" level="INFO">${BASE_URL} = </msg>
+<var>${BASE_URL}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-19T13:32:49.901952" elapsed="0.000577"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-19T13:32:49.903116" level="INFO">${BROWSER} = </msg>
+<var>${BROWSER}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-19T13:32:49.902860" elapsed="0.000295"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-19T13:32:49.903792" level="INFO">Opening browser '' to base url ''.</msg>
+<msg time="2025-09-19T13:32:49.903843" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-09-19T13:32:49.903958" level="FAIL">ValueError:  is not a supported browser.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-09-19T13:32:49.903468" elapsed="0.005048">ValueError:  is not a supported browser.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(className(),'nav-btn-register')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-19T13:32:49.908850" elapsed="0.000039"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-09-19T13:32:49.909028" elapsed="0.000025"/>
+</kw>
+<status status="FAIL" start="2025-09-19T13:32:49.901181" elapsed="0.008000">ValueError:  is not a supported browser.</status>
+</kw>
+<status status="FAIL" start="2025-09-19T13:32:49.900350" elapsed="0.009169">ValueError:  is not a supported browser.</status>
+</test>
+<status status="FAIL" start="2025-09-19T13:32:49.103125" elapsed="0.808348"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Full Flow Test" id="s1" pass="0" fail="1" skip="0">Full Flow Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-19T13:32:49.887553" level="WARN">Imported resource file 'C:\Users\NK 2316\robot-lab\resources\LoginPage.robot' is empty.</msg>
+<msg time="2025-09-19T13:32:49.891503" level="WARN">Imported resource file 'C:\Users\NK 2316\robot-lab\resources\DashboardPage.robot' is empty.</msg>
+</errors>
+</robot>
